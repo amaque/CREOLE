@@ -1,4 +1,4 @@
-site_name: CREOLE 0.1
+site_name: CREOLE 0.1.0
 repo_url: https://github.com/amaque/CREOLE
 edit_uri: tree/master/docs
 
@@ -12,3 +12,10 @@ markdown_extensions:
   
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+
